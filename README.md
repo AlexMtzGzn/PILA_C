@@ -22,11 +22,11 @@
 
 1. **Clonar el Repositorio**: 
     ```bash
-    git clone https://github.com/AlexMtzGzn/Pila_C.git
+    git clone https://github.com/AlexMtzGzn/PILA_C.git
     ```
 2. **Navegar al Directorio del Proyecto**: 
     ```bash
-    cd pila_C
+    cd PILA_C
     ```
 3. **Compilar el Programa**: 
     ```bash
