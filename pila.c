@@ -8,11 +8,15 @@ bool isEmpty(struct Pila *pila)
     return pila->cima == NULL;
 }
 
-struct Nodo* Crear_Nodo(int *elemento){
+struct Nodo* crear_Nodo(int *elemento){
 
-    struct Nodo *nodoNuevo =malloc(sizeof(struct Nodo));
+    struct Nodo *nodoNuevo = malloc(sizeof(struct Nodo));
+
+    if(nodoNuevo == NULL)
+        return nodoNuevo;
 
     nodoNuevo->valor = *elemento;
+    nodoNuevo->siguiente = NULL;
 
     return nodoNuevo;
 }
