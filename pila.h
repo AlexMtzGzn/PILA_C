@@ -14,6 +14,7 @@ struct Pila
 };
 
 void liberarPila(struct Pila *pila);
+struct Nodo* crear_Nodo(int *elemento);
 bool isEmpty(struct Pila *pila);
 void push(struct Pila *pila, int *elemento);
 void pop(struct Pila *pila);

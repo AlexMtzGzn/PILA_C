@@ -8,20 +8,26 @@ bool isEmpty(struct Pila *pila)
     return pila->cima == NULL;
 }
 
+struct Nodo* Crear_Nodo(int *elemento){
+
+    struct Nodo *nodoNuevo =malloc(sizeof(struct Nodo));
+
+    nodoNuevo->valor = *elemento;
+
+    return nodoNuevo;
+}
+
 void push(struct Pila *pila, int *elemento)
 {
-    struct Nodo *nodoNuevo = malloc(sizeof(struct Nodo));
+    struct Nodo *nodoNuevo = crear_Nodo(elemento);
 
     if (nodoNuevo != NULL)
     {
-        nodoNuevo->valor = *elemento;
         nodoNuevo->siguiente = pila->cima;
         pila->cima = nodoNuevo;
     }
     else
-    {
         printf("\nError al asignar memoria al nodo.");
-    }
 }
 
 void pop(struct Pila *pila)
