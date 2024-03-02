@@ -55,9 +55,7 @@ int top(struct Pila *pila)
 void imprimir(struct Pila *pila)
 {
     if (isEmpty(pila))
-    {
         printf("\nLa pila está vacía.");
-    }
     else
     {
         struct Nodo *nodo = pila->cima;
