@@ -26,7 +26,7 @@
     ```
 2. **Navegar al Directorio del Proyecto**: 
     ```bash
-    cd PILA_C
+    cd PILA_C/src
     ```
 3. **Compilar el Programa**: 
     ```bash
