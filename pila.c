@@ -123,6 +123,9 @@ void menu(struct Pila *pila)
             liberarPila(pila);
             imprimir(pila);
             break;
+        case 7:
+            printf("\nSaliendo...");  
+            break;  
         default:
             printf("\nOpción Inválida");
             break;
