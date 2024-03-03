@@ -113,7 +113,7 @@ void menu(struct Pila *pila)
             break;
         case 4:
             if (!isEmpty(pila))
-                printf("\nLa pila no está vacía");
+                printf("\nLa pila no está vacía\n");
             imprimir(pila);
             break;
         case 5:
